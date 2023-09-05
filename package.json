@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "Hello React",
+  "owner": "jamin m",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "a project for training and learning purposes",
   "main": "src/index.js",
   "dependencies": {
     "loader-utils": "3.2.1",
