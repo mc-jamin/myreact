@@ -1,10 +1,10 @@
-#myreact
+myreact
 Developed from CodeSandbox
 
-#Use
+Use
 - Learning react
 - Testing and deploying
 - Practice
 
-#Licence
-MIT License
+Licence
+-MIT License
