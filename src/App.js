@@ -14,11 +14,13 @@ export default function App() {
 
 function Counting(){
   const [count, setCount] = useState(0);
-  const increase = () => setCount(count+1)
+  const increase = () => setCount(count+1);
+  const decrease = () =>setCount(count-1);
   return (
     <>
     <p> You have clicked {count} times. </p>
     <button onClick={increase}> Click ++ </button>
+    <p><button onClick={decrease}> Click -- </button></p>
     </>
   );
 }
