@@ -18,8 +18,8 @@ function Counting(){
   return (
     <>
     <p> You have clicked {count} times. </p>
-    <button onClick={increase}> Click ++ </button>
-    <p><button onClick={()=>setCount(count-1) }> Click -- </button></p>
+    <button className = "btn" onClick={increase}> Click ++ </button>
+    <p><button className = "btn" onClick={()=>setCount(count-1) }> Click -- </button></p>
     </>
   );
 }

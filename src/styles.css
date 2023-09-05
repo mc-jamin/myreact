@@ -1,4 +1,14 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: darkgray;
+  padding: 5%;
+  border-style:outset;
+  border-radius: 30px;
+}
+.btn {
+  border-style: double;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
 }
