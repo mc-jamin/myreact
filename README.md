@@ -6,5 +6,4 @@ Use
 - Testing and deploying
 - Practice
 
-Licence
--MIT License
+MIT License
