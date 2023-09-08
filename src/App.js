@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./styles.css";
-
-
-export default function App() {
+const App=()=>{
   return (
     <div className="App">
       <h1>Count App</h1>
@@ -11,15 +9,21 @@ export default function App() {
     </div>
   );
 }
-
-function Counting(){
+const Counting=()=> {
   const [count, setCount] = useState(0);
-  const increase = () => setCount(count+1);
+  const increase =()=> setCount(count+1);
+  const decrease =()=>{
+    if (count==0){
+       alert("Cannot be negative");
+    }
+    else setCount(count-1);
+  }
   return (
     <>
     <p> You have clicked {count} times. </p>
-    <button className = "btn" onClick={increase}> Click ++ </button>
-    <p><button className = "btn" onClick={()=>setCount(count-1) }> Click -- </button></p>
+    <button className = "btn" onClick={increase}> Click Add </button>
+    <p><button className = "btn" onClick={decrease}> Click Minus </button></p>
     </>
   );
 }
+export default App;
