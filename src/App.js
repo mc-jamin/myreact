@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./styles.css";
-const App=()=>{
+const App=(props)=>{
   return (
     <div className="App">
       <h1>Count App</h1>
@@ -9,7 +9,7 @@ const App=()=>{
     </div>
   );
 }
-const Counting=()=> {
+const Counting=(props)=> {
   const [count, setCount] = useState(0);
   const [isPositive, setPositive] = useState(true);
   const increase =()=>{
