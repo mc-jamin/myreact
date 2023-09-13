@@ -11,18 +11,22 @@ const App=()=>{
 }
 const Counting=()=> {
   const [count, setCount] = useState(0);
-  const increase =()=> setCount(count+1);
-  const decrease =()=>{
-    if (count==0){
-       alert("Cannot be negative");
-    }
-    else setCount(count-1);
+  const [isPositive, setPositive] = useState(true);
+  const increase =()=>{
+    setPositive(true);
+    setCount(count+1);
   }
+  const decrease =()=>{
+    if(count>0) setCount(count-1);
+    else setPositive(false);    
+  }  
   return (
-    <>
-    <p> You have clicked {count} times. </p>
-    <button className = "btn" onClick={increase}> Click Add </button>
-    <p><button className = "btn" onClick={decrease}> Click Minus </button></p>
+    <>  
+    <input type ="button" className = "btn" onClick={increase} value = "Add"/>
+    <p><input type = "button" className = "btn" onClick={decrease} value = "Subtract"/></p>
+    <p>
+      { isPositive ? `Clicked ${count} times`: "Num cannot be negative" }
+    </p>
     </>
   );
 }
