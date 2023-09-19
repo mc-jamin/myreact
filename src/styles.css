@@ -1,7 +1,8 @@
 .App {
   font-family: sans-serif;
+  color: rgb(214, 203, 239);
   text-align: center;
-  background-color:palevioletred;
+  background-color:slateblue;
   padding: 5%;
   border-style:outset;
   border-radius: 30px;
