@@ -1,8 +1,8 @@
 {
-  "name": "hello_react",
-  "owner": "jamin m",
+  "name": "counting_app",
+  "owner": "jamin",
   "version": "1.0.0",
-  "description": "a project for training and learning purposes",
+  "description": "counting app",
   "main": "src/index.jsx",
   "dependencies": {
     "bootstrap": "^5.3.2",
