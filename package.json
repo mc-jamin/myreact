@@ -3,7 +3,7 @@
   "owner": "jamin m",
   "version": "1.0.0",
   "description": "a project for training and learning purposes",
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "dependencies": {
     "bootstrap": "^5.3.2",
     "loader-utils": "3.2.1",
